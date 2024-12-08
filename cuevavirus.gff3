@@ -1,0 +1,25 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region OQ630505.1 1 19019
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=3052148
+OQ630505.1	Genbank	region	1	19019	.	+	.	ID=OQ630505.1:1..19019;Dbxref=taxon:3052148;clone=LLOV11-22;collection-date=24-Sep-2019;country=Hungary;gbkey=Src;genome=genomic;isolate=Hungary/2019/378;mol_type=viral cRNA;nat-host=Miniopterus schreibersii;note=parental strain MZ541881.1%3B passaged 2 times and underwent Mycoplasma clean-up%3B resulting in 2 mutations within coding regions of the sequence;old-name=Lloviu cuevavirus
+OQ630505.1	Genbank	five_prime_UTR	1	511	.	+	.	ID=id-OQ630505.1:1..511;gbkey=5'UTR
+OQ630505.1	Genbank	gene	515	2764	.	+	.	ID=gene-N;Name=N;gbkey=Gene;gene=N;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	515	2764	.	+	0	ID=cds-WJL97488.1;Parent=gene-N;Dbxref=NCBI_GP:WJL97488.1;Name=WJL97488.1;gbkey=CDS;gene=N;product=nucleoprotein;protein_id=WJL97488.1
+OQ630505.1	Genbank	gene	3143	4105	.	+	.	ID=gene-VP35;Name=VP35;gbkey=Gene;gene=VP35;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	3143	4105	.	+	0	ID=cds-WJL97489.1;Parent=gene-VP35;Dbxref=NCBI_GP:WJL97489.1;Name=WJL97489.1;gbkey=CDS;gene=VP35;product=VP35;protein_id=WJL97489.1
+OQ630505.1	Genbank	gene	4847	5836	.	+	.	ID=gene-VP40;Name=VP40;gbkey=Gene;gene=VP40;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	4847	5836	.	+	0	ID=cds-WJL97490.1;Parent=gene-VP40;Dbxref=NCBI_GP:WJL97490.1;Name=WJL97490.1;gbkey=CDS;gene=VP40;product=VP40;protein_id=WJL97490.1
+OQ630505.1	Genbank	gene	6322	7569	.	+	.	ID=gene-GP1;Name=GP1;gbkey=Gene;gene=GP1;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	6322	7569	.	+	0	ID=cds-WJL97491.1;Parent=gene-GP1;Dbxref=NCBI_GP:WJL97491.1;Name=WJL97491.1;gbkey=CDS;gene=GP1;product=GP1;protein_id=WJL97491.1
+OQ630505.1	Genbank	gene	7512	8474	.	+	.	ID=gene-GP2;Name=GP2;gbkey=Gene;gene=GP2;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	7512	8474	.	+	0	ID=cds-WJL97492.1;Parent=gene-GP2;Dbxref=NCBI_GP:WJL97492.1;Name=WJL97492.1;gbkey=CDS;gene=GP2;product=GP2;protein_id=WJL97492.1
+OQ630505.1	Genbank	gene	8950	9936	.	+	.	ID=gene-VP30;Name=VP30;gbkey=Gene;gene=VP30;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	8950	9936	.	+	0	ID=cds-WJL97493.1;Parent=gene-VP30;Dbxref=NCBI_GP:WJL97493.1;Name=WJL97493.1;gbkey=CDS;gene=VP30;product=VP30;protein_id=WJL97493.1
+OQ630505.1	Genbank	gene	11147	11899	.	+	.	ID=gene-VP24;Name=VP24;gbkey=Gene;gene=VP24;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	11147	11899	.	+	0	ID=cds-WJL97494.1;Parent=gene-VP24;Dbxref=NCBI_GP:WJL97494.1;Name=WJL97494.1;gbkey=CDS;gene=VP24;product=VP24;protein_id=WJL97494.1
+OQ630505.1	Genbank	gene	12264	18854	.	+	.	ID=gene-L;Name=L;gbkey=Gene;gene=L;gene_biotype=protein_coding
+OQ630505.1	Genbank	CDS	12264	18854	.	+	0	ID=cds-WJL97495.1;Parent=gene-L;Dbxref=NCBI_GP:WJL97495.1;Name=WJL97495.1;gbkey=CDS;gene=L;product=RNA-dependent RNA polymerase;protein_id=WJL97495.1
+OQ630505.1	Genbank	three_prime_UTR	18855	19019	.	+	.	ID=id-OQ630505.1:18855..19019;gbkey=3'UTR
+

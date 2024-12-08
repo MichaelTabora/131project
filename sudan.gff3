@@ -1,0 +1,74 @@
+##gff-version 3
+#!gff-spec-version 1.21
+#!processor NCBI annotwriter
+##sequence-region FJ968794.1 1 18875
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=186540
+FJ968794.1	Genbank	region	1	18875	.	+	.	ID=FJ968794.1:1..18875;Dbxref=taxon:186540;country=Sudan;gbkey=Src;genome=genomic;isolation-source=human acute phase blood (Boniface) was inoculated into outbread Dunkin-Hartley Guinea Pigs (GP)%2C and serial passaged three times%3B ebolavirus was isolated from GP liver (ACB1 6-Sudan GP 3 liver 28/10/76)%3B ACB1 6-Sudan GP 3 liver was passaged twice through Vero cells in 2008;mol_type=viral cRNA;note=Project supported by the National Institute of Allergy and Infectious Diseases (NIAID)%3B Contract no. NO1-A1-30062;strain=Boniface
+FJ968794.1	Genbank	sequence_feature	1	53	.	+	.	ID=id-FJ968794.1:1..53;Note=leader sequence%3B non-coding%3B contains replication signal;gbkey=misc_feature
+FJ968794.1	Genbank	gene	54	3007	.	+	.	ID=gene-SEBOVgp1;Name=NP;gbkey=Gene;gene=NP;gene_biotype=protein_coding;locus_tag=SEBOVgp1
+FJ968794.1	Genbank	mRNA	54	3007	.	+	.	ID=rna-SEBOVgp1;Parent=gene-SEBOVgp1;gbkey=mRNA;gene=NP;locus_tag=SEBOVgp1;product=major nucleoprotein
+FJ968794.1	Genbank	exon	54	3007	.	+	.	ID=exon-SEBOVgp1-1;Parent=rna-SEBOVgp1;gbkey=mRNA;gene=NP;locus_tag=SEBOVgp1;product=major nucleoprotein
+FJ968794.1	Genbank	CDS	458	2674	.	+	0	ID=cds-ACR33187.1;Parent=rna-SEBOVgp1;Dbxref=NCBI_GP:ACR33187.1;Name=ACR33187.1;gbkey=CDS;gene=NP;locus_tag=SEBOVgp1;product=major nucleoprotein;protein_id=ACR33187.1
+FJ968794.1	Genbank	sequence_feature	54	67	.	+	.	ID=id-SEBOVgp1;Note=predominant transcription start site;gbkey=misc_feature;gene=NP;locus_tag=SEBOVgp1
+FJ968794.1	Genbank	region	2996	3007	.	+	.	ID=id-SEBOVgp1-2;Note=predicted transcription termination site;gbkey=polyA_signal;gene=NP;locus_tag=SEBOVgp1
+FJ968794.1	Genbank	three_prime_UTR	2675	3007	.	+	.	ID=id-SEBOVgp1-3;Parent=gene-SEBOVgp1;gbkey=3'UTR;gene=NP;locus_tag=SEBOVgp1
+FJ968794.1	Genbank	five_prime_UTR	54	457	.	+	.	ID=id-SEBOVgp1-4;Parent=gene-SEBOVgp1;gbkey=5'UTR;gene=NP;locus_tag=SEBOVgp1
+FJ968794.1	Genbank	sequence_feature	3008	3010	.	+	.	ID=id-FJ968794.1:3008..3010;Note=intergenic region;gbkey=misc_feature
+FJ968794.1	Genbank	gene	3011	4382	.	+	.	ID=gene-SEBOVgp2;Name=VP35;gbkey=Gene;gene=VP35;gene_biotype=protein_coding;locus_tag=SEBOVgp2
+FJ968794.1	Genbank	mRNA	3011	4382	.	+	.	ID=rna-SEBOVgp2;Parent=gene-SEBOVgp2;gbkey=mRNA;gene=VP35;locus_tag=SEBOVgp2;product=VP35
+FJ968794.1	Genbank	exon	3011	4382	.	+	.	ID=exon-SEBOVgp2-1;Parent=rna-SEBOVgp2;gbkey=mRNA;gene=VP35;locus_tag=SEBOVgp2;product=VP35
+FJ968794.1	Genbank	CDS	3138	4127	.	+	0	ID=cds-ACR33188.1;Parent=rna-SEBOVgp2;Dbxref=NCBI_GP:ACR33188.1;Name=ACR33188.1;gbkey=CDS;gene=VP35;locus_tag=SEBOVgp2;product=VP35;protein_id=ACR33188.1
+FJ968794.1	Genbank	sequence_feature	3011	3024	.	+	.	ID=id-SEBOVgp2;Note=predicted transcription start site;gbkey=misc_feature;gene=VP35;locus_tag=SEBOVgp2
+FJ968794.1	Genbank	region	4372	4382	.	+	.	ID=id-SEBOVgp2-2;Note=predicted transcription termination site;gbkey=polyA_signal;gene=VP35;locus_tag=SEBOVgp2
+FJ968794.1	Genbank	three_prime_UTR	4128	4382	.	+	.	ID=id-SEBOVgp2-3;Parent=gene-SEBOVgp2;gbkey=3'UTR;gene=VP35;locus_tag=SEBOVgp2
+FJ968794.1	Genbank	five_prime_UTR	3011	3137	.	+	.	ID=id-SEBOVgp2-4;Parent=gene-SEBOVgp2;gbkey=5'UTR;gene=VP35;locus_tag=SEBOVgp2
+FJ968794.1	Genbank	gene	4365	5875	.	+	.	ID=gene-SEBOVgp3;Name=VP40;gbkey=Gene;gene=VP40;gene_biotype=protein_coding;locus_tag=SEBOVgp3
+FJ968794.1	Genbank	mRNA	4365	5875	.	+	.	ID=rna-SEBOVgp3;Parent=gene-SEBOVgp3;gbkey=mRNA;gene=VP40;locus_tag=SEBOVgp3;product=matrix protein
+FJ968794.1	Genbank	exon	4365	5875	.	+	.	ID=exon-SEBOVgp3-1;Parent=rna-SEBOVgp3;gbkey=mRNA;gene=VP40;locus_tag=SEBOVgp3;product=matrix protein
+FJ968794.1	Genbank	CDS	4454	5434	.	+	0	ID=cds-ACR33189.1;Parent=rna-SEBOVgp3;Dbxref=NCBI_GP:ACR33189.1;Name=ACR33189.1;gbkey=CDS;gene=VP40;locus_tag=SEBOVgp3;product=matrix protein;protein_id=ACR33189.1
+FJ968794.1	Genbank	sequence_feature	4365	4376	.	+	.	ID=id-SEBOVgp3;Note=predicted transcription start site;gbkey=misc_feature;gene=VP40;locus_tag=SEBOVgp3
+FJ968794.1	Genbank	region	5865	5875	.	+	.	ID=id-SEBOVgp3-2;Note=predicted transcription termination site;gbkey=polyA_signal;gene=VP40;locus_tag=SEBOVgp3
+FJ968794.1	Genbank	three_prime_UTR	5435	5875	.	+	.	ID=id-SEBOVgp3-3;Parent=gene-SEBOVgp3;gbkey=3'UTR;gene=VP40;locus_tag=SEBOVgp3
+FJ968794.1	Genbank	five_prime_UTR	4365	4453	.	+	.	ID=id-SEBOVgp3-4;Parent=gene-SEBOVgp3;gbkey=5'UTR;gene=VP40;locus_tag=SEBOVgp3
+FJ968794.1	Genbank	gene	5883	8241	.	+	.	ID=gene-SEBOVgp4;Name=GP;gbkey=Gene;gene=GP;gene_biotype=protein_coding;locus_tag=SEBOVgp4
+FJ968794.1	Genbank	region	8231	8241	.	+	.	ID=id-SEBOVgp4;Note=predicted transcription termination site;gbkey=polyA_signal;gene=GP;locus_tag=SEBOVgp4
+FJ968794.1	Genbank	mRNA	5883	8241	.	+	.	ID=rna-SEBOVgp4;Parent=gene-SEBOVgp4;gbkey=mRNA;gene=GP;locus_tag=SEBOVgp4;product=nonstructural soluble secreted glycoprotein
+FJ968794.1	Genbank	exon	5883	8241	.	+	.	ID=exon-SEBOVgp4-1;Parent=rna-SEBOVgp4;gbkey=mRNA;gene=GP;locus_tag=SEBOVgp4;product=nonstructural soluble secreted glycoprotein
+FJ968794.1	Genbank	CDS	5998	7116	.	+	0	ID=cds-ACR33191.1;Parent=rna-SEBOVgp4;Dbxref=NCBI_GP:ACR33191.1;Name=ACR33191.1;Note=forms dimers linked by disulfide bonds (parallel orientation)%3B processed by furin to yield sGP and delta peptide;gbkey=CDS;gene=GP;locus_tag=SEBOVgp4;product=nonstructural soluble secreted glycoprotein;protein_id=ACR33191.1
+FJ968794.1	Genbank	mRNA	5883	8241	.	+	.	ID=rna-SEBOVgp4-2;Parent=gene-SEBOVgp4;exception=ribosomal slippage;gbkey=mRNA;gene=GP;locus_tag=SEBOVgp4;product=structural glycoprotein
+FJ968794.1	Genbank	exon	5883	6882	.	+	.	ID=exon-SEBOVgp4-2-1;Parent=rna-SEBOVgp4-2;exception=ribosomal slippage;gbkey=mRNA;gene=GP;locus_tag=SEBOVgp4;product=structural glycoprotein
+FJ968794.1	Genbank	exon	6882	8241	.	+	.	ID=exon-SEBOVgp4-2-2;Parent=rna-SEBOVgp4-2;exception=ribosomal slippage;gbkey=mRNA;gene=GP;locus_tag=SEBOVgp4;product=structural glycoprotein
+FJ968794.1	Genbank	CDS	5998	6882	.	+	0	ID=cds-ACR33190.1;Parent=rna-SEBOVgp4-2;Dbxref=NCBI_GP:ACR33190.1;Name=ACR33190.1;Note=processed by furin to yield GP1-GP2 heterodimer that forms membrane-anchored trimers (peplomers);exception=ribosomal slippage;gbkey=CDS;gene=GP;locus_tag=SEBOVgp4;product=structural glycoprotein;protein_id=ACR33190.1
+FJ968794.1	Genbank	CDS	6882	8027	.	+	0	ID=cds-ACR33190.1;Parent=rna-SEBOVgp4-2;Dbxref=NCBI_GP:ACR33190.1;Name=ACR33190.1;Note=processed by furin to yield GP1-GP2 heterodimer that forms membrane-anchored trimers (peplomers);exception=ribosomal slippage;gbkey=CDS;gene=GP;locus_tag=SEBOVgp4;product=structural glycoprotein;protein_id=ACR33190.1
+FJ968794.1	Genbank	sequence_feature	5883	5894	.	+	.	ID=id-SEBOVgp4-2;Note=predicted transcription start site;gbkey=misc_feature;gene=GP;locus_tag=SEBOVgp4
+FJ968794.1	Genbank	sequence_feature	6877	6883	.	+	.	ID=id-SEBOVgp4-3;Note=transcription editing site%3B polymerase slippage of 1 nucleotide (-1 direction) during transcription results in the addition of an extra adenosine and the translation of an alternate frame leading to expression of structural glycoprotein;gbkey=misc_feature;gene=GP;locus_tag=SEBOVgp4
+FJ968794.1	Genbank	three_prime_UTR	8028	8241	.	+	.	ID=id-SEBOVgp4-4;Parent=gene-SEBOVgp4;gbkey=3'UTR;gene=GP;locus_tag=SEBOVgp4
+FJ968794.1	Genbank	five_prime_UTR	5883	5997	.	+	.	ID=id-SEBOVgp4-5;Parent=gene-SEBOVgp4;gbkey=5'UTR;gene=GP;locus_tag=SEBOVgp4
+FJ968794.1	Genbank	gene	8224	9697	.	+	.	ID=gene-SEBOVgp5;Name=VP30;gbkey=Gene;gene=VP30;gene_biotype=protein_coding;locus_tag=SEBOVgp5
+FJ968794.1	Genbank	mRNA	8224	9697	.	+	.	ID=rna-SEBOVgp5;Parent=gene-SEBOVgp5;gbkey=mRNA;gene=VP30;locus_tag=SEBOVgp5;product=minor nucleoprotein
+FJ968794.1	Genbank	exon	8224	9697	.	+	.	ID=exon-SEBOVgp5-1;Parent=rna-SEBOVgp5;gbkey=mRNA;gene=VP30;locus_tag=SEBOVgp5;product=minor nucleoprotein
+FJ968794.1	Genbank	CDS	8441	9307	.	+	0	ID=cds-ACR33192.1;Parent=rna-SEBOVgp5;Dbxref=NCBI_GP:ACR33192.1;Name=ACR33192.1;gbkey=CDS;gene=VP30;locus_tag=SEBOVgp5;product=minor nucleoprotein;protein_id=ACR33192.1
+FJ968794.1	Genbank	sequence_feature	8224	8235	.	+	.	ID=id-SEBOVgp5;Note=predicted transcription start site;gbkey=misc_feature;gene=VP30;locus_tag=SEBOVgp5
+FJ968794.1	Genbank	region	9686	9697	.	+	.	ID=id-SEBOVgp5-2;Note=predicted transcription termination site;gbkey=polyA_signal;gene=VP30;locus_tag=SEBOVgp5
+FJ968794.1	Genbank	three_prime_UTR	9308	9697	.	+	.	ID=id-SEBOVgp5-3;Parent=gene-SEBOVgp5;gbkey=3'UTR;gene=VP30;locus_tag=SEBOVgp5
+FJ968794.1	Genbank	five_prime_UTR	8224	8440	.	+	.	ID=id-SEBOVgp5-4;Parent=gene-SEBOVgp5;gbkey=5'UTR;gene=VP30;locus_tag=SEBOVgp5
+FJ968794.1	Genbank	sequence_feature	9698	9823	.	+	.	ID=id-FJ968794.1:9698..9823;Note=intergenic region;gbkey=misc_feature
+FJ968794.1	Genbank	gene	9824	11474	.	+	.	ID=gene-SEBOVgp6;Name=VP24;gbkey=Gene;gene=VP24;gene_biotype=protein_coding;locus_tag=SEBOVgp6
+FJ968794.1	Genbank	mRNA	9824	11474	.	+	.	ID=rna-SEBOVgp6;Parent=gene-SEBOVgp6;Note=minor matrix protein;gbkey=mRNA;gene=VP24;locus_tag=SEBOVgp6;product=membrane-associated protein VP24
+FJ968794.1	Genbank	exon	9824	11474	.	+	.	ID=exon-SEBOVgp6-1;Parent=rna-SEBOVgp6;Note=minor matrix protein;gbkey=mRNA;gene=VP24;locus_tag=SEBOVgp6;product=membrane-associated protein VP24
+FJ968794.1	Genbank	CDS	10299	11054	.	+	0	ID=cds-ACR33193.1;Parent=rna-SEBOVgp6;Dbxref=NCBI_GP:ACR33193.1;Name=ACR33193.1;gbkey=CDS;gene=VP24;locus_tag=SEBOVgp6;product=membrane-associated protein VP24;protein_id=ACR33193.1
+FJ968794.1	Genbank	sequence_feature	9824	9837	.	+	.	ID=id-SEBOVgp6;Note=predicted transcription start site;gbkey=misc_feature;gene=VP24;locus_tag=SEBOVgp6
+FJ968794.1	Genbank	region	11464	11474	.	+	.	ID=id-SEBOVgp6-2;Note=predicted transcription termination site;gbkey=polyA_signal;gene=VP24;locus_tag=SEBOVgp6
+FJ968794.1	Genbank	three_prime_UTR	11055	11474	.	+	.	ID=id-SEBOVgp6-3;Parent=gene-SEBOVgp6;gbkey=3'UTR;gene=VP24;locus_tag=SEBOVgp6
+FJ968794.1	Genbank	five_prime_UTR	9824	10298	.	+	.	ID=id-SEBOVgp6-4;Parent=gene-SEBOVgp6;gbkey=5'UTR;gene=VP24;locus_tag=SEBOVgp6
+FJ968794.1	Genbank	gene	11457	18494	.	+	.	ID=gene-SEBOVgp7;Name=L;gbkey=Gene;gene=L;gene_biotype=protein_coding;locus_tag=SEBOVgp7
+FJ968794.1	Genbank	mRNA	11457	18494	.	+	.	ID=rna-SEBOVgp7;Parent=gene-SEBOVgp7;gbkey=mRNA;gene=L;locus_tag=SEBOVgp7;product=viral polymerase
+FJ968794.1	Genbank	exon	11457	18494	.	+	.	ID=exon-SEBOVgp7-1;Parent=rna-SEBOVgp7;gbkey=mRNA;gene=L;locus_tag=SEBOVgp7;product=viral polymerase
+FJ968794.1	Genbank	CDS	11535	18167	.	+	0	ID=cds-ACR33194.1;Parent=rna-SEBOVgp7;Dbxref=NCBI_GP:ACR33194.1;Name=ACR33194.1;gbkey=CDS;gene=L;locus_tag=SEBOVgp7;product=viral polymerase;protein_id=ACR33194.1
+FJ968794.1	Genbank	sequence_feature	11457	11468	.	+	.	ID=id-SEBOVgp7;Note=predicted transcription start site;gbkey=misc_feature;gene=L;locus_tag=SEBOVgp7
+FJ968794.1	Genbank	sequence_feature	11538	11538	.	+	.	ID=id-SEBOVgp7-2;Note=possible alternate site of translation initiation;gbkey=misc_feature;gene=L;locus_tag=SEBOVgp7
+FJ968794.1	Genbank	region	18483	18494	.	+	.	ID=id-SEBOVgp7-3;Note=predicted transcription termination site;gbkey=polyA_signal;gene=L;locus_tag=SEBOVgp7
+FJ968794.1	Genbank	three_prime_UTR	18168	18494	.	+	.	ID=id-SEBOVgp7-4;Parent=gene-SEBOVgp7;gbkey=3'UTR;gene=L;locus_tag=SEBOVgp7
+FJ968794.1	Genbank	five_prime_UTR	11457	11534	.	+	.	ID=id-SEBOVgp7-5;Parent=gene-SEBOVgp7;gbkey=5'UTR;gene=L;locus_tag=SEBOVgp7
+FJ968794.1	Genbank	sequence_feature	18495	18875	.	+	.	ID=id-FJ968794.1:18495..18875;Note=trailer sequence%3B noncoding%3B contains replication signal;gbkey=misc_feature
+
