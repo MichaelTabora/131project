@@ -1,7 +1,7 @@
 # BioE C131 Final Project: Filovirus
 ## 1. Load and process test data
 ### 1.1. Download and process Filoviridae family genomes
-When adding the genomes into Jbrowse 2, we will refer to the Jbrowse 2 root directory. For Linux installation, the folder should be `/var/www/jbrowse2` or `/var/www/html/jbrowse2`. For macOS, the folder should be `/opt/homebrew/var/www/jbrowse2` (for M1) or `/usr/local/var/www/jbrowse2` (for Intel).
+When adding the genomes into Jbrowse 2, we will refer to the Jbrowse 2 root directory. For Linux installation, the folder should be `/var/www` or `/var/www/html`. For macOS, the folder should be `/opt/homebrew/var/www` (for M1) or `/usr/local/var/www` (for Intel).
 
 ```
 export APACHE_ROOT='/path/to/rootdir'
