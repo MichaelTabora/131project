@@ -80,8 +80,7 @@ jbrowse add-track cuevavirus_sorted.gff.gz --out $APACHE_ROOT/jbrowse2 --load co
 #### Dianlovirus annotations
 
 ```
-jbrowse sort-gff dianlovirus.gff3 > dianlovirus_
-sorted.gff
+jbrowse sort-gff dianlovirus.gff3 > dianlovirus_sorted.gff
 bgzip dianlovirus_sorted.gff
 tabix dianlovirus_sorted.gff.gz
 jbrowse add-track dianlovirus_sorted.gff.gz --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames dianlovirus
