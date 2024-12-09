@@ -267,3 +267,143 @@ For macOS,
 brew services restart httpd
 ```
 
+## 3. Comparative Analysis for Ebolavirus
+
+### 3.1 Install MAFTT and minimap2
+
+```
+brew install mafft
+```
+
+#### For macOS (Homebrew):
+
+Install Minimap2: 
+
+```
+brew install minimap2
+```
+
+Verify Installation: 
+
+```
+minimap2 --version
+```
+
+#### For Linux (Ubuntu/Debian):
+Update the Package List:
+
+```
+sudo apt update
+```
+
+Install Minimap2:
+
+```
+sudo apt install minimap2
+```
+
+Verify Installation:
+
+```
+minimap2 --version
+```
+
+### 3.2 Download related genomes
+
+You’ll need related filovirus genomes to compare against your reference genome. Below are some specific examples of genomes to download:
+
+Examples of Related Filoviruses:
+
+#### Zaire ebolavirus (strain Mayinga) - Reference genome
+
+```
+wget "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NC_002549&db=nuccore&report=fasta&retmode=text" -O zaire_ebola_reference_NC_002549.fa
+```
+
+#### Sudan ebolavirus
+
+```
+wget "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NC_006432&db=nuccore&report=fasta&retmode=text" -O sudan_ebola_NC_006432.fa
+```
+#### Reston ebolavirus
+
+```
+wget "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NC_004161&db=nuccore&report=fasta&retmode=text" -O reston_ebola_NC_004161.fa
+```
+
+#### Marburg virus (strain Angola)
+
+```
+wget "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NC_001608&db=nuccore&report=fasta&retmode=text" -O marburg_angola_NC_001608.fa
+```
+Combine all genomes into one file: 
+
+```
+cat zaire_ebola_reference_NC_002549.fa sudan_ebola_NC_006432.fa reston_ebola_NC_004161.fa marburg_angola_NC_001608.fa > combined_filoviruses_NC_002549_NC_006432_NC_004161_NC_001608.fa
+```
+
+### 3.3 Perform multiple sequence alignment
+
+Use mafft to align the genomes. Here's the command:
+
+```
+mafft --auto --thread 8 combined_filoviruses_NC_002549_NC_006432_NC_004161_NC_001608.fa > aligned_combined_filoviruses_NC_002549_NC_006432_NC_004161_NC_001608.fa
+```
+
+This produces an aligned FASTA file where conserved and divergent regions are evident.
+
+###  3.4 Convert Alignment to a JBrowse2-Compatible Format
+
+#### JBrowse2 supports pairwise alignments in BAM format. Follow these steps to convert the aligned sequences:
+
+Index the Reference Genome:
+
+```
+samtools faidx zaire_ebola_reference_NC_002549.fa
+```
+
+Align the Sequences to the Reference Genome Using Minimap2:
+
+```
+minimap2 -ax asm5 zaire_ebola_reference_NC_002549.fa aligned_combined_filoviruses_NC_002549_NC_006432_NC_004161_NC_001608.fa | samtools view -Sb - > alignment_filoviruses_to_zaire_ebola.bam
+```
+
+
+Sort and Index the BAM File:
+
+```
+samtools sort alignment_filoviruses_to_zaire_ebola.bam -o alignment_filoviruses_to_zaire_ebola_sorted.bam
+samtools index alignment_filoviruses_to_zaire_ebola_sorted.bam
+```
+
+### 3.5 Load Data into JBrowse2
+
+Add the Reference Genome:
+
+```
+jbrowse add-assembly zaire_ebola_reference_NC_002549.fa --out $APACHE_ROOT/jbrowse2 --load copy
+```
+
+Add the Alignment Track:
+
+```
+jbrowse add-track alignment_filoviruses_to_zaire_ebola_sorted.bam \
+    --out $APACHE_ROOT/jbrowse2 \
+    --load copy \
+    --trackId comparative_alignment_NC_002549 \
+    --name "Comparative Genomics: Filoviruses (Zaire ebolavirus reference)" \
+    --assemblyNames zaire_ebola_reference_NC_002549
+```
+
+Add the GFF3 Annotations to JBrowse2: Once you have a GFF3 file for your reference genome, add it to JBrowse2 using the `jbrowse add-track` command:
+
+```
+wget "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NC_002549.1&db=nuccore&report=gff3&retmode=text" -O zaire_ebola_reference_NC_002549.gff3
+jbrowse sort-gff zaire_ebola_reference_NC_002549.gff3 > zaire_ebola_reference_NC_002549_sorted.gff
+bgzip zaire_ebola_reference_NC_002549_sorted.gff
+tabix zaire_ebola_reference_NC_002549_sorted.gff.gz
+jbrowse add-track zaire_ebola_reference_NC_002549_sorted.gff.gz --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames zaire_ebola_reference_NC_002549
+jbrowse text-index --out $APACHE_ROOT/jbrowse2
+```
+
+
