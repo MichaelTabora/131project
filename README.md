@@ -125,7 +125,7 @@ tabix sudan_sorted.gff.gz
 jbrowse add-track sudan_sorted.gff.gz --out $APACHE_ROOT/jbrowse2 --load copy --assemblyNames sudan
 ```
 
-### Zaire
+#### Zaire
 
 ```
 export FASTA_ROOT=https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/848/505/GCF_000848505.1_ViralProj14703/
@@ -136,7 +136,7 @@ samtools faidx zaire.fa
 jbrowse add-assembly zaire.fa --out $APACHE_ROOT/jbrowse2 --load copy
 ```
 
-### Zaire annotations
+#### Zaire annotations
 
 ```
 wget $FASTA_ROOT/GCF_000848505.1_ViralProj14703_genomic.gff.gz
@@ -157,7 +157,7 @@ wget -O Zaire_Ebola_virus_strain_Mayinga_1.fa $FASTA_ROOT
 samtools faidx Zaire_Ebola_virus_strain_Mayinga_1.fa
 jbrowse add-assembly Zaire_Ebola_virus_strain_Mayinga_1.fa --out $APACHE_ROOT/jbrowse2 --load copy
 ```
-### Zaire Ebola virus strain Mayinga 1 annotations
+#### Zaire Ebola virus strain Mayinga 1 annotations
 
 ```
 wget "https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AF272001.1&db=nuccore&report=gff3&retmode=text" -O Zaire_Ebola_virus_strain_Mayinga_1.gff3
