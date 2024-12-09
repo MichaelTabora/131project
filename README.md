@@ -1,5 +1,5 @@
 # BioE C131 Final Project: Filovirus
-## Alexis Alburo, Tyrell Duya, Alexander Reyes, Michael Tabora
+Alexis Alburo, Tyrell Duya, Alexander Reyes, Michael Tabora
 ## 1. Load and process test data
 ### 1.1. Download, process Filoviridae family genomes and annotations
 When adding the genomes into Jbrowse 2, we will refer to the Jbrowse 2 root directory. For Linux installation, the folder should be `/var/www` or `/var/www/html`. For macOS, the folder should be `/opt/homebrew/var/www` (for M1) or `/usr/local/var/www` (for Intel).
