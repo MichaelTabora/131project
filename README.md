@@ -407,7 +407,7 @@ jbrowse add-track zaire_ebola_reference_NC_002549_sorted.gff.gz --out $APACHE_RO
 jbrowse text-index --out $APACHE_ROOT/jbrowse2
 ```
 
-###Contributions:
+### Contributions:
 Alexis Alburo: Conducted background research on proteins of interest and filovirus strains to provide biological context, and contributed to the written report by synthesizing findings and presenting the thematic focus and analysis results.
 Tyrell Duya: Contributed to the comparative genomics analysis of filoviruses by identifying and aligning variant genomes, loading related genomes into JBrowse2 alongside annotations, and configuring tracks to enable clear visualization and exploration of conserved and divergent regions across viral sequences.
 Alexander Reyes: Researched multiple alignment algorithms, facilitated the loading of genomes and annotations for various filovirus species, and organized the project documentation in the GitHub README for clear and comprehensive instructions.
