@@ -232,7 +232,7 @@ In the temporary work directory, run the following command.
 jbrowse text-index --out $APACHE_ROOT/jbrowse2
 ```
 
-### 1.5. Download Protein3d plugin
+## 2. Download Protein3d plugin
 
 We will index into the jbrowse2 directory and edit the config.json file directly from the terminal.
 
